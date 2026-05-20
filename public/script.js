@@ -128,7 +128,18 @@ function updateStats() {
   lowStockElement.textContent = lowStock;
   emptyStockElement.textContent = emptyStock;
 }
+async function fetchInventory() {
 
+  const response =
+    await fetch('/api/inventory');
+
+  const data =
+    await response.json();
+
+  console.log(data);
+}
+
+fetchInventory();
 renderInventory();
 renderActivity();
 updateStats();
