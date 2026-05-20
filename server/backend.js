@@ -46,7 +46,7 @@ app.get('/api/inventory', (req, res) => {
 
 app.get('/', (req, res) => {
   res.sendFile(
-    path.join(__dirname, '../public/index.html')
+    path.join(__dirname, '../public/index1.html')
   );
 });
 app.get('/test',(req, res) => {
