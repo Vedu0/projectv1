@@ -4,5 +4,4 @@ export default function handler(req, res) {
             message: "API WORKING"
               });
 
-              }
-}                                                                                               
+            }
