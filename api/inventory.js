@@ -1,39 +1,8 @@
 export default function handler(req, res) {
 
-      const inventory = [
+        res.status(200).json({
+            message: "API WORKING"
+              });
 
-          {
-                id: 1,
-                      container: "Container 1",
-                            quantity: 10,
-                                  capacity: 15,
-                                        status: "FULL"
-                                            },
-
-                                                {
-                                                      id: 2,
-                                                            container: "Container 2",
-                                                                  quantity: 5,
-                                                                        capacity: 15,
-                                                                              status: "LOW STOCK"
-                                                                                  },
-
-                                                                                      {
-                                                                                            id: 3,
-                                                                                                  container: "Container 3",
-                                                                                                        quantity: 0,
-                                                                                                              capacity: 15,
-                                                                                                                    status: "EMPTY"
-                                                                                                                        }
-
-                                                                                                                          ];
-
-                                                                                                                            res.status(200).json(inventory);
-
-                                                                                                                            }
-                                                                                                                            export default function handler(req, res) {
-                                                                                                                                res.status(200).json({
-                                                                                                                                    message: "API WORKING"
-                                                                                                                                      });
-                                                                                                                                      }
-                                                                                                                            
+              }
+}                                                                                               
